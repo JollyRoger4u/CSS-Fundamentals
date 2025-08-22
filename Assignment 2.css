@@ -79,32 +79,48 @@ Section p {
   background-color: rgb(185, 185, 57);
 }
 
-article {
+Article {
   border: 2px solid #000;
   border-radius: 5px;
   padding: 20px;
   background-color: rgb(185, 185, 57);
 }
 
-aside {
+Section Article p {
+  border: none;
+  padding: 0px;
+}
+Section Article:first-of-type p:nth-child(2) {
+  color: rgb(0, 0, 190);
+}
+
+Aside {
   border: 2px solid #000;
   padding: 5px 20px;
   margin-top: 34px;
   margin-left: 10px;
   border-radius: 5px;
   background-color: lightgreen;
-  height: 20%;
+  height: 30%;
 }
 
-aside h2 {
+Aside h2 {
   font-size: 25px;
 }
 
-aside ul {
+Aside ul {
   font-size: 20px;
 }
 
-footer {
+Aside ol li:nth-child(odd) {
+  color: rgb(235, 14, 14);
+}
+
+Aside ol li:nth-child(even) {
+  color: rgb(186, 6, 231);
+}
+
+Footer {
   grid-column: 1/4;
   background-color: purple;
   margin-top: 20px;
